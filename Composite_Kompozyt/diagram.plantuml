@@ -1,0 +1,34 @@
+@startuml
+
+    Composite --|> Component
+    Leaf --|> Component
+
+    abstract class Component
+    {
+        #string name;
+
+        +Component(string name)
+        +void Add(Component c);
+        +void Remove(Component c);
+        +void Display(int depth);
+    }
+
+    class Composite
+    {
+        -List<Component> _children
+
+        +Composite(string name)
+        +override void Add(Component c)
+        +override void Remove(Component c)
+        +override void Display(int depth)
+    }
+
+    class Leaf
+    {
+        +Leaf(string name)
+        +void Add(Component c)
+        +void Remove(Component c)
+        +void Display(int depth)
+    }
+
+@enduml
