@@ -1,4 +1,5 @@
-#Composite Kompozyt
+# Composite Kompozyt
+
 Kompozyt to strukturalny wzorzec obiektowy, który składa obiekty w struktury drzewiaste. Dzięki niemu można traktować obiekty jak i ich złożenia w ten sam sposób. 
 
 Implementacja - wzorzec składa się z klasy abstrakcyjnej Component którą implementują dwie klasy Composite i Leaf. Leaf to najmniejsza jednoska w naszym drzewie (liść) a Composite to złożenie różnych jednostek (gałąź) mogący zawierać inne liście i gałęzie.
@@ -17,4 +18,5 @@ Powiązane wzorce:
 5. Odwiedzający (Visitor) - zapewnia jedną lokalizację dla operacji i zachowań
 
 Diagram UML przykładu:
-![UML Diagram](/out/diagram.png)
+
+![UML Diagram](/Composite_Kompozyt/out/diagram/diagram.png)
