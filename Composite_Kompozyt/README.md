@@ -9,6 +9,7 @@ Cechy wzorca:
 2. uproszczenie kodu klienta - klient traktuje strutkury proste i złożone w ten sam sposób nie wiedząc czy coś jest liściem czy gałęzią (nie powinno to mieć znaczenia)
 3. ułatwia dodawanie nowych komponentów, podklasy Composite albo Leaf automatycznie będą współdziałać z kodem klienta
 4. może sprawić że projekt będzie zbyt ogólny, czasami chcemy dodawać do danego kompozytu tylko komponenty danego rodzaju i wtedy trzeba sprawdzać je w czasie wykonywania programu
+5. wzorcem Kompozyt można zastąpić sporo relacji jeden do wielu w kodzie, kiedy np. we wielu klasach przeszukujemy iteracyjnie po listach można ten kod wrzucić do jednej klasy kompozytowej
 
 Powiązane wzorce:
 1. Łańcuch zobowiązań (Chain of responsibility) - używa powiązań pomiędzy obiektami
