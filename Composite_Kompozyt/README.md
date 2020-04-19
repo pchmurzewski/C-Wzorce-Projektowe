@@ -4,20 +4,20 @@ Kompozyt to strukturalny wzorzec obiektowy, który składa obiekty w struktury d
 
 Implementacja - wzorzec składa się z klasy abstrakcyjnej Component którą implementują dwie klasy Composite i Leaf. Leaf to najmniejsza jednoska w naszym drzewie (liść) a Composite to złożenie różnych jednostek (gałąź) mogący zawierać inne liście i gałęzie.
 
-Cechy wzorca:
+### Cechy wzorca:
 1. definiowanie hierarchii obiektów prostych i złożonych
 2. uproszczenie kodu klienta - klient traktuje strutkury proste i złożone w ten sam sposób nie wiedząc czy coś jest liściem czy gałęzią (nie powinno to mieć znaczenia)
 3. ułatwia dodawanie nowych komponentów, podklasy Composite albo Leaf automatycznie będą współdziałać z kodem klienta
 4. może sprawić że projekt będzie zbyt ogólny, czasami chcemy dodawać do danego kompozytu tylko komponenty danego rodzaju i wtedy trzeba sprawdzać je w czasie wykonywania programu
 5. wzorcem Kompozyt można zastąpić sporo relacji jeden do wielu w kodzie, kiedy np. we wielu klasach przeszukujemy iteracyjnie po listach można ten kod wrzucić do jednej klasy kompozytowej
 
-Powiązane wzorce:
+### Powiązane wzorce:
 1. Łańcuch zobowiązań (Chain of responsibility) - używa powiązań pomiędzy obiektami
 2. Dekorator (Decorator) -  stosując razem Dekorator i Kompozyt mają wspólną klasę nadrzędną i wtedy dekorator musi obsługiwać interfejs klasy komponent
 3. Pyłek (Flyweight) - umożliwia współużytkowanie komponentów bez przechowywania referencji do elementów nadrzędnych
 4. Iterator (Iterator) - można wykorzystać do przechodzenia po zawartości kompozytów
 5. Odwiedzający (Visitor) - zapewnia jedną lokalizację dla operacji i zachowań
 
-Diagram UML przykładu:
+### Diagram UML przykładu:
 
 ![UML Diagram](/Composite_Kompozyt/out/diagram/diagram.png)
